@@ -1,0 +1,17 @@
+==============================================================================
+[+] Python Injection
+==============================================================================
+
+import subprocess
+subprocess.run(["ls", "-l"])
+
+import os
+os.system('ls -l')
+
+
+import os
+stream = os.popen('echo Returned output')
+output = stream.read()
+output
+
+# Other attempts: https://janakiev.com/blog/python-shell-commands/
